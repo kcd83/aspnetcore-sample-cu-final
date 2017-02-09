@@ -10,6 +10,19 @@ ms.topic: article
 ms.assetid: 6282a1d3-1796-4958-a2e6-afdf3364fcbf
 ms.technology: aspnet
 ms.prod: aspnet-core
+
+# Extracted from ASPNET Docs
+
+This sample is extracted from https://github.com/aspnet/Docs
+
+```
+mkdir app
+cd app
+git clone -b master --single-branch git@github.com:aspnet/Docs.git .
+git filter-branch --tree-filter "find . -type f -not -wholename './aspnetcore/data/ef-mvc/intro/samples/cu-final/*' -delete" HEAD
+git mv aspnetcore/data/ef-mvc/intro/samples/cu-final/* .
+```
+
 # Contoso University sample app
 
 Contoso University demonstrates how to use Entity Framework Core 1.0 in an
